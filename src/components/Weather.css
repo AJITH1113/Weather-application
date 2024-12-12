@@ -1,40 +1,20 @@
-/* app.css */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-.app {
-  height: 100vh;
-  width: 100%;
-  display: grid;
-  background: rgb(82, 153, 198);
-}
-
-/* weather.css */
 .weather {
   place-self: center;
   padding: 40px;
   border-radius: 10px;
+  /* background-image: linear-gradient(45deg, violet, orange); */
   background: linear-gradient(45deg, orange, purple);
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90%;
-  max-width: 400px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
 .search-bar {
   display: flex;
   align-items: center;
   gap: 12px;
-  width: 100%;
 }
 
 .search-bar input {
-  flex: 1;
   height: 50px;
   border: none;
   outline: none;
@@ -44,7 +24,6 @@
   background-color: rgb(247, 247, 251);
   font-size: 18px;
 }
-
 .search-bar img {
   width: 50px;
   padding: 15px;
@@ -52,40 +31,31 @@
   background-color: #ebfffc;
   cursor: pointer;
 }
-
 .weather_icon {
-  width: 80px;
-  margin: 20px 0;
+  width: 50px;
+  margin: 30px 0;
 }
-
 .temperature {
   color: #fff;
-  font-size: 64px;
+  font-size: 80px;
   line-height: 1;
 }
-
 .location {
   color: #fff;
-  font-size: 32px;
+  font-size: 40px;
 }
-
 .weather_data {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   margin-top: 40px;
   color: #ebfffc;
   justify-content: space-between;
 }
-
 .weather_data .col {
-  flex: 1;
-  min-width: 120px;
   display: flex;
   align-items: flex-start;
   gap: 12px;
   font-size: 12px;
-  margin-bottom: 16px;
 }
 
 .weather_data .col span {
@@ -96,49 +66,4 @@
 .weather_data .col img {
   width: 26px;
   margin-top: 10px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .temperature {
-    font-size: 48px;
-  }
-
-  .location {
-    font-size: 24px;
-  }
-
-  .search-bar img {
-    width: 40px;
-    padding: 10px;
-  }
-
-  .weather {
-    padding: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .temperature {
-    font-size: 36px;
-  }
-
-  .location {
-    font-size: 20px;
-  }
-
-  .search-bar input {
-    font-size: 16px;
-    height: 40px;
-    padding-left: 15px;
-  }
-
-  .search-bar img {
-    width: 30px;
-    padding: 8px;
-  }
-
-  .weather_icon {
-    width: 60px;
-  }
 }
